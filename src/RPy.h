@@ -74,7 +74,7 @@
 #  endif
 #endif  /* _WIN32 */
 
-#include <Rdevices.h> /* must follow Graphics.h */
+//#include <Rdevices.h> /* must follow Graphics.h */
 
 
 /* Missing definitions from Rinterface.h or RStartup.h */

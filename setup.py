@@ -152,7 +152,7 @@ for RHOME in RHOMES:
     elif sys.platform=='osf1V5':
         include_dirs = [ os.path.join(RHOME.strip(), 'include'), 
                          'src' ]
-        libraries=['R','Rlapack']
+        libraries=['R','lapack']
         library_dirs = r_libs
         runtime_libs = r_libs
         extra_compile_args=["-shared"]
@@ -160,7 +160,7 @@ for RHOME in RHOMES:
     else: # unix-like systems, this is known to work for Linux and Solaris
         include_dirs = [ os.path.join(RHOME.strip(), 'include'), 
                          'src', '/usr/share/R/include' ]
-        libraries=['R','Rlapack']
+        libraries=['R','lapack']
         library_dirs = r_libs
         runtime_libs = r_libs
         extra_compile_args=["-shared"]

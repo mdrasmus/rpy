@@ -98,7 +98,7 @@ def get_R_VERSION(RHOME=None, force_exec=False):
       raise RuntimeError("Couldn't execute the R interpreter" +
                          " `%s'.\n" % rexec )
     # edd 05 Apr 2006  version = re.search("R +([0-9]\.[0-9]\.[0-9])", output)
-    version = re.search(" +([0-9]\.[0-9]\.[0-9])", output)
+    version = re.search(" +([0-9]+\.[0-9]+\.[0-9]+)", output)
     if not version:
       raise RuntimeError("Couldn't obtain version number from output\n"
                                "of `R --version'.\n")
